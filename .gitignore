@@ -19,3 +19,10 @@ __pycache__/
 .vscode/
 .idea/
 *.swp
+
+# Pastas de fontes brutas e assets não utilizados no runtime
+a809ed16d257e0af9137bd26af2f3f5c.jpg/
+aurea_codex_*/
+classical_occult_astral_custody/
+scripts/
+build.js
