@@ -1,0 +1,314 @@
+/* ==========================================================================
+   AUREA CODEX — CLASSICAL OCCULT / ASTRAL CUSTODY STYLESHEET
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Cinzel:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --color-surface: #121413;
+  --color-surface-dim: #121413;
+  --color-surface-bright: #393939;
+  --color-surface-lowest: #0d0e0e;
+  --color-surface-low: #1b1c1c;
+  --color-surface-container: #1f2020;
+  --color-surface-high: #292a2a;
+  --color-surface-highest: #343535;
+  --color-on-surface: #e4e2e1;
+  --color-on-surface-variant: #d1c4b7;
+  --color-primary: #e5c18f;
+  --color-primary-container: #b69567;
+  --color-on-primary: #422c07;
+  --color-secondary: #cdc6b9;
+  --color-outline: #9a8f82;
+  --color-outline-variant: #4e453b;
+  --color-tertiary: #ffb3af;
+  --color-tertiary-container: #f3736f;
+  --color-crimson: #852124;
+}
+
+/* Reset suave e scroll ritual desimpedido */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #121413;
+  color: #e4e2e1;
+  font-family: 'EB Garamond', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  scroll-behavior: smooth;
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121413;
+  color: #e4e2e1;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+/* Barra de rolagem cerimonial dourada sempre visível e funcional */
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+  display: block !important;
+}
+::-webkit-scrollbar-track {
+  background: #0d0e0e !important;
+  border-left: 1px solid rgba(182, 149, 103, 0.2) !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2b2b !important;
+  border: 1px solid #b69567 !important;
+  border-radius: 2px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e5c18f !important;
+  box-shadow: 0 0 10px rgba(229, 193, 143, 0.5) !important;
+}
+
+/* Moldura Cerimonial Fixa com cruzes nos cantos */
+.ritual-frame-corners {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(182, 149, 103, 0.18);
+}
+
+.ritual-frame-inner {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(205, 198, 185, 0.08);
+  position: relative;
+}
+
+/* Animações Rituais e Orbitais Herméticas */
+@keyframes celestial-spin-cw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes celestial-spin-ccw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes nodal-pulse {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes seal-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(229, 193, 143, 0.2); }
+  50% { box-shadow: 0 0 35px rgba(229, 193, 143, 0.55); }
+}
+
+.animate-orbit-cw {
+  animation: celestial-spin-cw 120s linear infinite;
+  transform-origin: center;
+}
+
+.animate-orbit-ccw {
+  animation: celestial-spin-ccw 90s linear infinite;
+  transform-origin: center;
+}
+
+.animate-astrolabe-compass {
+  animation: celestial-spin-cw 80s linear infinite;
+  transform-origin: center;
+}
+
+.animate-nodal-pulse {
+  animation: nodal-pulse 4s ease-in-out infinite;
+}
+
+.animate-seal-glow {
+  animation: seal-glow 3s ease-in-out infinite;
+}
+
+/* Microinterações Cerimoniais */
+.ceremonial-card {
+  transition: all 350ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+}
+
+.ceremonial-card:hover {
+  border-color: rgba(229, 193, 143, 0.7);
+  box-shadow: 0 0 28px -6px rgba(182, 149, 103, 0.18), inset 0 0 20px rgba(182, 149, 103, 0.05);
+}
+
+.ceremonial-card:hover .corner-cross {
+  color: #ffddb1;
+  text-shadow: 0 0 8px rgba(229, 193, 143, 0.6);
+}
+
+.ceremonial-btn {
+  transition: all 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+  letter-spacing: 0.2em;
+}
+
+.ceremonial-btn:hover {
+  box-shadow: inset 0 0 16px rgba(182, 149, 103, 0.25), 0 0 15px rgba(229, 193, 143, 0.2);
+  border-color: rgba(229, 193, 143, 0.9);
+}
+
+.ceremonial-btn:active {
+  transform: scale(0.98);
+}
+
+.ceremonial-row {
+  transition: all 250ms ease;
+}
+
+.ceremonial-row:hover {
+  background-color: rgba(41, 42, 42, 0.9) !important;
+}
+
+/* Marca d'água Imperial */
+.watermark-codex {
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: 0.15em;
+  font-family: 'Bodoni Moda', serif;
+}
+
+/* Notarial Certificate Styling */
+.notarial-certificate {
+  background: radial-gradient(circle at 50% 30%, #1f2020 0%, #121413 100%);
+  border: 1px solid rgba(229, 193, 143, 0.4);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), inset 0 0 40px rgba(182, 149, 103, 0.08);
+}
+
+/* Modais e Overlays */
+.codex-modal-backdrop {
+  background: rgba(13, 14, 14, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+/* Estilo do astrolábio de fundo */
+.astral-overlay-active {
+  opacity: 0.25 !important;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-cw,
+  .animate-orbit-ccw,
+  .animate-astrolabe-compass,
+  .animate-nodal-pulse,
+  .animate-seal-glow {
+    animation: none !important;
+  }
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGAÇÃO FIDUCIÁRIA SUPERIOR (AUREA CODEX)
+   ========================================================================== */
+.codex-navbar-container {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  height: 4.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .codex-navbar-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.codex-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-family: 'Newsreader', serif;
+  font-size: 0.625rem; /* 10px */
+  line-height: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  color: #d1c4b7;
+  transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.codex-nav-link:hover {
+  color: #ffddb1;
+}
+
+.codex-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -0.45rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  opacity: 0;
+  transform: translateY(2px);
+}
+
+.codex-nav-link.active {
+  color: #e5c18f !important;
+  font-weight: 600;
+}
+
+.codex-nav-link.active::after {
+  background: #e5c18f;
+  box-shadow: 0 0 8px rgba(229, 193, 143, 0.8), 0 0 2px #fff;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.codex-nav-link:not(.active):hover::after {
+  background: rgba(229, 193, 143, 0.45);
+  box-shadow: 0 0 6px rgba(229, 193, 143, 0.4);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.codex-header-btn {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  font-family: 'Newsreader', serif;
+  font-size: 0.58rem; /* 9.3px */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
+}
+
+.codex-header-btn:active {
+  transform: scale(0.97);
+}

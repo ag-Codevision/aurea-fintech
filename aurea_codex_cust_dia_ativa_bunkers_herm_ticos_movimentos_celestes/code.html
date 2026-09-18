@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AUREA CODEX — Custódia &amp; Gestão Patrimonial</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error-container': '#93000a', 'surface-variant': '#343535', 'on-primary-fixed-variant': '#5b421c', 'on-tertiary-fixed': '#410005', 'on-tertiary': '#660710', 'surface': '#121413', 'surface-container-highest': '#343535', 'secondary-container': '#4d493f', 'primary': '#e5c18f', 'outline': '#9a8f82', 'surface-container-low': '#1b1c1c', 'primary-container': '#b69567', 'on-background': '#e4e2e1', 'surface-dim': '#121413', 'surface-container-high': '#292a2a', 'secondary-fixed-dim': '#cdc6b9', 'inverse-on-surface': '#303030', 'surface-tint': '#e5c18f', 'primary-fixed': '#ffddb1', 'on-secondary-fixed-variant': '#4a463d', 'surface-bright': '#393939', 'primary-fixed-dim': '#e5c18f', 'on-primary': '#422c07', 'on-tertiary-fixed-variant': '#852124', 'secondary': '#cdc6b9', 'on-error-container': '#ffdad6', 'on-secondary-container': '#beb8ab', 'tertiary-container': '#f3736f', 'tertiary': '#ffb3af', 'error': '#ffb4ab', 'on-error': '#690005', 'on-tertiary-container': '#690912', 'tertiary-fixed-dim': '#ffb3af', 'tertiary-fixed': '#ffdad7', 'on-surface-variant': '#d1c4b7', 'surface-container': '#1f2020', 'on-primary-fixed': '#291800', 'background': '#121413', 'on-surface': '#e4e2e1', 'secondary-fixed': '#e9e2d4', 'inverse-primary': '#755a31', 'on-primary-container': '#442e09', 'inverse-surface': '#e4e2e1', 'surface-container-lowest': '#0d0e0e', 'on-secondary': '#333027', 'on-secondary-fixed': '#1e1b13', 'outline-variant': '#4e453b' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'margin-mobile': '1.25rem', 'gutter-mobile': '1rem', 'space-lg': '1.75rem', 'margin': '3rem', 'gutter': '1.5rem', 'space-xs': '0.25rem', 'space-xl': '3rem', 'space-md': '1rem', 'space-sm': '0.5rem' }, 'fontFamily': { 'headline-xl-mobile': ['Bodoni Moda'], 'body-sm': ['EB Garamond'], 'headline-md': ['Bodoni Moda'], 'headline-sm': ['Bodoni Moda'], 'body-md': ['EB Garamond'], 'headline-xl': ['Bodoni Moda'], 'headline-lg-mobile': ['Bodoni Moda'], 'label-lg': ['Newsreader'], 'label-sm': ['Newsreader'], 'label-md': ['Newsreader'], 'headline-lg': ['Bodoni Moda'], 'body-lg': ['EB Garamond'] }, 'fontSize': { 'headline-xl-mobile': ['30px', { 'lineHeight': '38px', 'letterSpacing': '0.06em', 'fontWeight': '600' }], 'body-sm': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0.02em', 'fontWeight': '400' }], 'headline-md': ['22px', { 'lineHeight': '28px', 'letterSpacing': '0.05em', 'fontWeight': '500' }], 'headline-sm': ['17px', { 'lineHeight': '24px', 'letterSpacing': '0.06em', 'fontWeight': '600' }], 'body-md': ['16px', { 'lineHeight': '24px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'headline-xl': ['44px', { 'lineHeight': '52px', 'letterSpacing': '0.08em', 'fontWeight': '600' }], 'headline-lg-mobile': ['24px', { 'lineHeight': '32px', 'letterSpacing': '0.05em', 'fontWeight': '500' }], 'label-lg': ['13px', { 'lineHeight': '18px', 'letterSpacing': '0.14em', 'fontWeight': '500' }], 'label-sm': ['9px', { 'lineHeight': '12px', 'letterSpacing': '0.22em', 'fontWeight': '600' }], 'label-md': ['11px', { 'lineHeight': '16px', 'letterSpacing': '0.18em', 'fontWeight': '500' }], 'headline-lg': ['32px', { 'lineHeight': '40px', 'letterSpacing': '0.06em', 'fontWeight': '500' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'letterSpacing': '0.01em', 'fontWeight': '400' }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col justify-between"><div class="pointer-events-none fixed inset-0 z-50 border border-primary-container/20 m-2 p-1"><div class="w-full h-full border border-secondary/10 relative"><span class="absolute -top-1 -left-1 text-primary-container text-label-sm font-label-sm">+</span><span class="absolute -top-1 -right-1 text-primary-container text-label-sm font-label-sm">+</span><span class="absolute -bottom-1 -left-1 text-primary-container text-label-sm font-label-sm">+</span><span class="absolute -bottom-1 -right-1 text-primary-container text-label-sm font-label-sm">+</span></div></div><header class="fixed top-0 left-0 w-full z-40 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-4"><div class="w-9 h-9 border border-primary-container flex items-center justify-center relative bg-surface-container-lowest"><span class="text-primary text-body-sm select-none">☩</span><span class="absolute -top-0.5 -right-0.5 w-1 h-1 bg-primary-container"></span><span class="absolute -bottom-0.5 -left-0.5 w-1 h-1 bg-primary-container"></span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-primary">Aurea Codex</span><span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-on-surface-variant/70">Custódia Arcana &amp; Patrimônio</span></div></div><nav class="hidden xl:flex items-center gap-8" data-active-classes="text-primary border-b-2 border-primary"><a class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="visao-geral" href="#">Visão Geral</a><a class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="custodia-ativa" href="#">Custódia Ativa</a><a class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="arquivo-ativos" href="#">Arquivo de Ativos</a><a class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="transacoes-rituais" href="#">Transações Rituais</a><a class="font-label-md text-label-md uppercase tracking-[0.18em] text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="ordens-celestes" href="#">Ordens Celestes</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-primary-container bg-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md uppercase tracking-[0.2em] transition-colors" data-path="chave-privada" href="#"><span class="text-tertiary-container">◇</span> Chave Privada</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Eixo Ritual / Celestial Background Decorators -->
+<div class="relative w-full overflow-hidden bg-surface pb-24">
+<!-- Fine astral celestial orbit lines behind header -->
+<div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-15">
+<svg class="w-[850px] h-[850px] text-primary-container" fill="none" stroke="currentColor" viewbox="0 0 800 800"><g class="orbit-slow"><circle cx="400" cy="400" r="380" stroke-dasharray="4 8" stroke-width="0.5"></circle><circle cx="400" cy="400" r="300" stroke-width="0.75"></circle><line stroke-opacity="0.6" stroke-width="0.5" x1="400" x2="400" y1="0" y2="800"></line><line stroke-opacity="0.6" stroke-width="0.5" x1="0" x2="800" y1="400" y2="400"></line></g><g class="orbit-reverse-slow"><circle cx="400" cy="400" r="210" stroke-dasharray="2 6" stroke-width="0.5"></circle><circle cx="400" cy="400" r="120" stroke-width="1"></circle><line stroke-opacity="0.4" stroke-width="0.5" x1="120" x2="680" y1="120" y2="680"></line><line stroke-opacity="0.4" stroke-width="0.5" x1="120" x2="680" y1="680" y2="120"></line></g><polygon class="ritual-pulse" fill="currentColor" fill-opacity="0.3" points="400,385 415,400 400,415 385,400"></polygon></svg>
+</div>
+<!-- SEÇÃO 1: CABEÇALHO EDITORIAL & EIXO RITUAL -->
+<div class="relative max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-12">
+<!-- Overline Heraldic Badge -->
+<div class="flex items-center gap-3 mb-4">
+<span class="text-tertiary font-label-sm text-label-sm">◆</span>
+<span class="font-label-md text-label-md tracking-[0.28em] text-primary uppercase">
+          Codex Patrimonii · Livro Segundo — Custódia Ativa
+        </span>
+<span class="h-px w-24 bg-primary-container/30"></span>
+</div>
+<!-- Monumental Headline and Narrative Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10">
+<div class="lg:col-span-8">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-light leading-none">
+            ESTADO DE GUARDA &amp;<br/>
+<span class="italic font-normal text-on-surface">BUNKERS INVIOLÁVEIS</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-4 leading-relaxed">
+            Monitoramento em tempo contínuo de quóruns herméticos, sensores criptográficos de isolamento Faraday e status de lacre notarial dos cofres de jurisdição soberana sob custódia arcana.
+          </p>
+</div>
+<!-- Jurisdictional Latin Attestation -->
+<div class="lg:col-span-4 lg:text-right flex flex-col justify-end">
+<span class="font-label-sm text-label-sm tracking-[0.24em] text-outline uppercase block">Attestatum Notariale</span>
+<span class="font-headline-sm text-headline-sm text-secondary tracking-widest mt-1">CURIA PRIMA · MMXXVI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60 tracking-wider mt-0.5">CH-0941 / SÃO GOTARDO FIDUCIARY</span>
+</div>
+</div>
+<!-- Quad-Metrics Monolith Panel -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-primary-container/20 p-px">
+<!-- Metric I -->
+<div class="bg-surface-container-lowest p-6 flex flex-col justify-between relative group hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Status Geral</span>
+<span class="w-2 h-2 rounded-none bg-tertiary-container ring-4 ring-tertiary-container/20 ritual-pulse"></span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary tracking-wide">100% INVIOLÁVEL</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed block mt-1">Selo Notarial Suíço Ativo</span>
+</div>
+<div class="mt-4 pt-3 border-t border-primary-container/10 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>REGISTRO SOLE</span>
+<span>VERIFICADO</span>
+</div>
+</div>
+<!-- Metric II -->
+<div class="bg-surface-container-lowest p-6 flex flex-col justify-between relative group hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Nível de Resiliência</span>
+<span class="font-label-sm text-label-sm text-primary">FROST</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface tracking-wide">AIR-GAPPED 7/11</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed block mt-1">Isolamento Magnético Alfa</span>
+</div>
+<div class="mt-4 pt-3 border-t border-primary-container/10 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>ENTROPIA MPC</span>
+<span class="text-primary font-semibold">MAXIMA</span>
+</div>
+</div>
+<!-- Metric III -->
+<div class="bg-surface-container-lowest p-6 flex flex-col justify-between relative group hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Barometria &amp; Clima</span>
+<span class="font-label-sm text-label-sm text-primary">982 hPa</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary tracking-wide">14.2°C · ESTÁVEL</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed block mt-1">Maciço de São Gotardo (GVA)</span>
+</div>
+<div class="mt-4 pt-3 border-t border-primary-container/10 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>SUBTERRÂNEO</span>
+<span>-450 METROS</span>
+</div>
+</div>
+<!-- Metric IV -->
+<div class="bg-surface-container-lowest p-6 flex flex-col justify-between relative group hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Quórum de Chaves</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="inline-block w-1.5 h-1.5 bg-primary rounded-full"></span> 5 ATIVAS
+            </span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface tracking-wide">5 DE 7 SELOS</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed block mt-1">Maioria Qualificada Apta</span>
+</div>
+<div class="mt-4 pt-3 border-t border-primary-container/10 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>RITO ABERTO</span>
+<span class="text-tertiary-container font-semibold">EXPIR. 38h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SEÇÃO 2: ARQUITETURA DE COFRES SOBERANOS & VISÃO DA EFÍGIE HISTÓRICA -->
+<div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-10">
+<div class="flex items-center justify-between mb-8 pb-3 border-b border-primary-container/20">
+<div class="flex items-center gap-3">
+<span class="text-primary font-headline-sm">§ II.I</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-wider uppercase">
+            Bastiões Primários de Custódia Geológica
+          </h2>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-[0.22em] text-on-surface-variant/70 hidden sm:inline-block">
+          Soberania Física Inviolável
+        </span>
+</div>
+<!-- Mosaic Grid: Master Effigy Plaque + 3 Subterranean Vaults -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Pillar: Ancient Bust Custodian Inscription -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-px border border-primary-container/30 relative">
+<!-- Crosshairs corners -->
+<span class="absolute -top-1.5 -left-1.5 text-primary text-label-sm font-label-sm select-none">+</span>
+<span class="absolute -top-1.5 -right-1.5 text-primary text-label-sm font-label-sm select-none">+</span>
+<span class="absolute -bottom-1.5 -left-1.5 text-primary text-label-sm font-label-sm select-none">+</span>
+<span class="absolute -bottom-1.5 -right-1.5 text-primary text-label-sm font-label-sm select-none">+</span>
+<div class="bg-surface-container p-6 relative flex flex-col">
+<!-- Header of Plaque -->
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/30">
+<span class="font-label-sm text-label-sm tracking-[0.26em] text-primary uppercase">Patronus Custodiae</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">ARCANA AUREA</span>
+</div>
+<!-- Image with Astro-Alchemical Framing -->
+<div class="relative mt-5 mb-5 overflow-hidden border border-primary-container/20 bg-surface-container-lowest"><div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-30 z-10"><svg class="w-[360px] h-[360px] text-primary" fill="none" stroke="currentColor" viewbox="0 0 300 300"><g class="orbit-slow"><circle cx="150" cy="150" r="140" stroke-dasharray="2 6" stroke-width="0.6"></circle><circle cx="150" cy="150" r="115" stroke-dasharray="6 4" stroke-width="0.4"></circle></g><g class="orbit-reverse-slow"><circle cx="150" cy="150" r="90" stroke-dasharray="3 7" stroke-width="0.5"></circle><line stroke-opacity="0.3" stroke-width="0.5" x1="150" x2="150" y1="10" y2="290"></line><line stroke-opacity="0.3" stroke-width="0.5" x1="10" x2="290" y1="150" y2="150"></line></g></svg></div>
+<img class="w-full h-[430px] object-cover object-top opacity-90 transition-transform duration-700 hover:scale-105" data-alt="A solemn marble classical bust of an ancient Roman emperor with a carved beard and draped toga, set against a dark textured mineral black background with fine sacred geometry, astrolabe orbit lines, and deep carmine red botanical leaves, rendered in high contrast chiaroscuro with gold leaf accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdMuMfOXoT_khFy4qjS3FFq8C4f_fF2s21Mf2XcQhbrLYSpuODn8wPvshHdsehmZek_UT2y0DyVyoMssIbdIoqS1JsM_mGk9cs9y6bH7Vsfqe8XMuWdecloHNadxSNfIq7baADu2RlW3uUvpxHtP4TBiOZTA2OQPIYOdW3cGF_T-sLw48GyrJktNjpaCMBMngeHUmqry-YNhYhxqSebRO51NzSUEMt_vl1DmGcJAmITS_jygKiEqIW"/>
+<!-- Subtle inner astral vignette overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Floating Sigil Coordinate Overlay -->
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div class="bg-surface-container-lowest/90 px-3 py-1.5 border border-primary-container/30 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Selo Hermético: N. 001-ALPHA</span>
+</div>
+<div class="bg-surface-container-lowest/90 px-2 py-1.5 border border-primary-container/30 backdrop-blur-sm">
+<span class="text-tertiary text-label-md ritual-pulse">♦</span>
+</div>
+</div>
+</div>
+<!-- Descriptive Text -->
+<div class="space-y-3">
+<h3 class="font-headline-md text-headline-md text-on-surface font-light">
+                Efígie da Salvaguarda Dinástica
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Cada câmara de custódia opera sob o arquétipo da permanência absoluta. Os depósitos não admitem liquidação unilateral nem reversão por mandados não-concordatários.
+              </p>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm uppercase tracking-wider text-outline">
+<span>Protocolo Perpétuo</span>
+<span class="text-secondary font-semibold">IMUTÁVEL</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Pillar: 3 Sovereign Vault Dossiers -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- COFRE I: BASTIÃO ALPINA -->
+<div class="bg-surface-container-lowest border border-primary-container/30 relative p-6 group hover:border-primary-container transition-colors ceremonial-hover">
+<span class="absolute -top-1 -left-1 text-primary-container text-label-sm select-none">+</span>
+<span class="absolute -top-1 -right-1 text-primary-container text-label-sm select-none">+</span>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary">I</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">BASTIÃO ALPINA</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">SÃO GOTARDO · CONFEDERAÇÃO SUÍÇA</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 bg-tertiary-container ritual-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-tertiary uppercase">Lacre Inviolado</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-5 py-2">
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Alocação Áurea</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1 block">14.850 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Au 999.9 Good Delivery</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Geologia de Blindagem</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 block">-450m Granito</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Resistência Sísmica IX</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Ciclo Notarial</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed mt-1 block">Bimestral</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Próx: 18 Dias</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Reserva física central contida sob placa maciça de granito alpino. Sentinela armada privada com duplo cordão de contenção e redundância barométrica contínua.
+            </p>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">
+                CERTIFICAÇÃO: ISO-17025 / CODELIST ALP-09
+              </span>
+<button class="px-5 py-2.5 bg-surface-container border border-primary-container text-primary font-label-md text-label-md uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2" onclick="solicitarInspecao('Bastião Alpina')">
+<span>Requisitar Inspeção Auditada</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- COFRE II: MERIDIANO TITÂNIO -->
+<div class="bg-surface-container-lowest border border-primary-container/30 relative p-6 group hover:border-primary-container transition-colors ceremonial-hover">
+<span class="absolute -top-1 -left-1 text-primary-container text-label-sm select-none">+</span>
+<span class="absolute -top-1 -right-1 text-primary-container text-label-sm select-none">+</span>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary">II</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">MERIDIANO TITÂNIO</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">ESTOCOLMO · REINO DA SUÉCIA</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 bg-primary"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase">Gaiola Faraday Ativa</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-5 py-2">
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Substrato das Chaves</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1 block">Titânio Grau 5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Ponto de Fusão 1.668°C</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Isolamento Magnético</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 block">EMP Shield</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Atenuação &gt; 120 dB</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Time-Lock Notarial</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed mt-1 block">48 Horas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Dispensação Racional</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Cofre de custódia das chaves mestre MPC gravadas a laser em matrizes de titânio puro. Desconexão galvânica absoluta, operando sem interface de rede em qualquer camada.
+            </p>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">
+                MATRIZ: SECP256K1 · FROST SHARD
+              </span>
+<button class="px-5 py-2.5 bg-surface-container border border-primary-container text-primary font-label-md text-label-md uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2" onclick="verificarEntropia('Meridiano Titânio')">
+<span>Verificar Entropia Criptográfica</span>
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+</button>
+</div>
+</div>
+<!-- COFRE III: ARQUIVO HERMÉTICO -->
+<div class="bg-surface-container-lowest border border-primary-container/30 relative p-6 group hover:border-primary-container transition-colors ceremonial-hover">
+<span class="absolute -top-1 -left-1 text-primary-container text-label-sm select-none">+</span>
+<span class="absolute -top-1 -right-1 text-primary-container text-label-sm select-none">+</span>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary">III</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">ARQUIVO HERMÉTICO</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">LE FREEPORT · REPÚBLICA DE SINGAPURA</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 bg-secondary"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-secondary-fixed uppercase">Atmosfera Árgon</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-5 py-2">
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Títulos Primários</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-1 block">42 Escrituras</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Participações &amp; Imóveis</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Atmosfera Interna</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 block">99.99% Ar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Zero Oxidação Papírea</span>
+</div>
+<div class="bg-surface-container p-3">
+<span class="font-label-sm text-label-sm text-outline uppercase block tracking-wider">Acesso Fiduciário</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed mt-1 block">Diplomático</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant/70">Pacto Extra-Jurisdicional</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Custódia imobiliária de instrumentos soberanos, testamentos fiduciários e participações acionárias em papel de alta pureza. Selagem a vácuo perene em cápsula de nobre gás árgon.
+            </p>
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">
+                JURISDIÇÃO: SINGAPORE HIGH COURT PROTOCOL
+              </span>
+<button class="px-5 py-2.5 bg-surface-container border border-primary-container text-primary font-label-md text-label-md uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2" onclick="consultarDespacho('Arquivo Hermético Singapura')">
+<span>Consultar Despacho Diplomático</span>
+<span class="material-symbols-outlined text-[16px]">description</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SEÇÃO 3: PROTOCOLO DE QUÓRUM DAS 7 CHAVES SAGRADAS (MULTI-SIGIL RITUAL) -->
+<div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-12">
+<div class="bg-surface-container-lowest border border-primary-container/30 p-8 sm:p-10 relative"><div class="pointer-events-none absolute -right-24 -top-24 w-96 h-96 opacity-10 flex items-center justify-center overflow-hidden"><svg class="w-full h-full text-primary-container" fill="none" stroke="currentColor" viewbox="0 0 400 400"><g class="orbit-slow"><circle cx="200" cy="200" r="180" stroke-dasharray="4 8" stroke-width="1"></circle><circle cx="200" cy="200" r="120" stroke-width="0.75"></circle></g><g class="orbit-reverse-slow"><circle cx="200" cy="200" r="150" stroke-dasharray="2 6" stroke-width="0.5"></circle><circle cx="200" cy="200" r="80" stroke-width="0.5"></circle></g></svg></div>
+<span class="absolute -top-2 -left-2 text-primary font-label-md select-none">✠</span>
+<span class="absolute -top-2 -right-2 text-primary font-label-md select-none">✠</span>
+<span class="absolute -bottom-2 -left-2 text-primary font-label-md select-none">✠</span>
+<span class="absolute -bottom-2 -right-2 text-primary font-label-md select-none">✠</span>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-[0.26em]">
+<span>Ordo Septem Clavium</span>
+<span>•</span>
+<span>Conselho Guardião</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">
+              Quórum Criptográfico das 7 Chaves Sagradas
+            </h2>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary">5 / 7 SIGNATÁRIOS</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed block tracking-widest uppercase mt-0.5">
+              MAIORIA QUALIFICADA ATINGIDA (71.4%)
+            </span>
+</div>
+</div>
+<!-- Astrolabe Progress Bar Representation -->
+<div class="relative w-full mb-10">
+<div class="h-0.5 w-full bg-outline-variant/30 relative flex items-center justify-between">
+<div class="absolute h-0.5 bg-primary" style="width: 71.4%;"></div>
+<!-- 7 Astrolabe Nodes -->
+<div class="w-3.5 h-3.5 border border-primary bg-primary flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-surface font-bold">1</span>
+</div>
+<div class="w-3.5 h-3.5 border border-primary bg-primary flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-surface font-bold">2</span>
+</div>
+<div class="w-3.5 h-3.5 border border-primary bg-primary flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-surface font-bold">3</span>
+</div>
+<div class="w-3.5 h-3.5 border border-primary bg-primary flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-surface font-bold">4</span>
+</div>
+<div class="w-3.5 h-3.5 border border-primary bg-primary flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-surface font-bold">5</span>
+</div>
+<div class="w-3.5 h-3.5 border border-outline bg-surface-container flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-outline">6</span>
+</div>
+<div class="w-3.5 h-3.5 border border-outline bg-surface-container flex items-center justify-center -top-1.5 relative">
+<span class="text-[7px] text-outline">7</span>
+</div>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm text-outline mt-3 uppercase tracking-wider">
+<span>Iniciação Notarial</span>
+<span>Limiar Mínimo (4/7)</span>
+<span>Consenso Unânime (7/7)</span>
+</div>
+</div>
+<!-- Grid of 7 Dynastic Guardians -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+<!-- Key 1 -->
+<div class="bg-surface-container p-4 border border-primary/40 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary mb-2">
+<span>CLAVIS I</span>
+<span class="text-tertiary">VALIDADA</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Notário Zurique</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Assinatura Notarial · 09:14 ZUR</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>HASH: 0x82f...a19</span>
+<span class="text-primary font-bold">✓ SELADO</span>
+</div>
+</div>
+<!-- Key 2 -->
+<div class="bg-surface-container p-4 border border-primary/40 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary mb-2">
+<span>CLAVIS II</span>
+<span class="text-tertiary">VALIDADA</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Notário Genebra</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Assinatura Notarial · 10:22 GVA</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>HASH: 0x31c...e40</span>
+<span class="text-primary font-bold">✓ SELADO</span>
+</div>
+</div>
+<!-- Key 3 -->
+<div class="bg-surface-container p-4 border border-primary/40 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary mb-2">
+<span>CLAVIS III</span>
+<span class="text-primary">PRESENTE</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Custodiante Dinástico</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Presente no Meridiano Central</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>PATRIARCA TITULAR</span>
+<span class="text-primary font-bold">✓ SELADO</span>
+</div>
+</div>
+<!-- Key 4 -->
+<div class="bg-surface-container p-4 border border-outline-variant/50 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-2">
+<span>CLAVIS IV</span>
+<span class="text-error">EM ESPERA</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Conselho Londres</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Atestado Fiduciário de Vida</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>STATUS: TELEMETRIA</span>
+<span class="text-outline">PENDENTE</span>
+</div>
+</div>
+<!-- Key 5 -->
+<div class="bg-surface-container p-4 border border-primary/40 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary mb-2">
+<span>CLAVIS V</span>
+<span class="text-tertiary">AIR-GAPPED</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Reserva Friagem MPC</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bunker Gotardo Shard 05</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>ENTROPIA: 256 BITS</span>
+<span class="text-primary font-bold">✓ SELADO</span>
+</div>
+</div>
+<!-- Key 6 -->
+<div class="bg-surface-container p-4 border border-primary/40 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-primary mb-2">
+<span>CLAVIS VI</span>
+<span class="text-primary">FÉ PÚBLICA</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Curadoria São Paulo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Validação Escritural Oficial</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>TABELIONATO 14º</span>
+<span class="text-primary font-bold">✓ SELADO</span>
+</div>
+</div>
+<!-- Key 7 -->
+<div class="bg-surface-container p-4 border border-outline-variant/50 relative ceremonial-hover">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-2">
+<span>CLAVIS VII</span>
+<span class="text-outline">LACRADA</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Contingência Ápice</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Inviolada · Protocolo Ômega</div>
+<div class="mt-3 pt-2 border-t border-outline-variant/20 flex justify-between items-center text-label-sm font-label-sm text-outline">
+<span>SEGURANÇA CEGA</span>
+<span class="text-outline">INATIVA</span>
+</div>
+</div>
+<!-- Summary Guardian Badge -->
+<div class="bg-surface-container-lowest p-4 border border-dashed border-primary-container/40 flex flex-col justify-between ceremonial-hover">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-1">Status Notarial</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">HABILITADO</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                A autorização de movimentação física encontra-se passível de despacho ritual.
+              </p>
+</div>
+<div class="text-label-sm font-label-sm text-primary tracking-widest uppercase mt-3">
+              ● RITO DESEMBARAÇÁVEL
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- SEÇÃO 4: TERMINAL DE SOLICITAÇÃO DE ABERTURA CERIMONIAL -->
+<div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-10">
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-8 lg:p-12 relative">
+<!-- Dual corner frames -->
+<span class="absolute -top-1 -left-1 text-primary text-label-sm font-label-sm">+</span>
+<span class="absolute -top-1 -right-1 text-primary text-label-sm font-label-sm">+</span>
+<span class="absolute -bottom-1 -left-1 text-primary text-label-sm font-label-sm">+</span>
+<span class="absolute -bottom-1 -right-1 text-primary text-label-sm font-label-sm">+</span>
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-tertiary-container font-label-md">◈</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">
+              Desembaraço Solene &amp; Abertura Litúrgica de Cofre
+            </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-light">
+            Terminal de Despacho &amp; Notificação Notarial
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-8 leading-relaxed">
+            A movimentação de barras de ouro sacras ou a inspeção ocular no interior dos maciços alpinos requer inserção de chave criptográfica dinástica, com aplicação compulsória da janela de resfriamento (Time-Lock 48h).
+          </p>
+<form class="space-y-6" onsubmit="executarRitoDesembaraco(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Credential Field -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-outline" for="credencial">
+                  Credencial Estelar Dinástica (Sigil)
+                </label>
+<div class="relative">
+<input class="w-full bg-surface-container px-4 py-3 border border-outline-variant text-primary font-headline-sm text-headline-sm tracking-wider focus:outline-none focus:border-primary placeholder:text-outline/40" id="credencial" placeholder="SIGIL-CUSTODIA-MMXXVI-ALPHA" required="" type="text" value="SIGIL-CUSTODIA-MMXXVI-ALPHA"/>
+<span class="absolute right-3 top-3 text-label-sm font-label-sm text-outline">ROM. IX</span>
+</div>
+</div>
+<!-- Vault Selection -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-outline" for="cofreSelect">
+                  Câmara de Destino do Mandato
+                </label>
+<select class="w-full bg-surface-container px-4 py-3 border border-outline-variant text-on-surface font-body-md text-body-md focus:outline-none focus:border-primary" id="cofreSelect">
+<option value="alpina">Bastião Alpina (São Gotardo, Suíça) — Ouro Físico</option>
+<option value="estocolmo">Meridiano Titânio (Estocolmo, Suécia) — Matriz MPC</option>
+<option value="singapura">Arquivo Hermético (Singapura) — Atos Notariais</option>
+</select>
+</div>
+</div>
+<!-- Time-lock and protocol checkbox confirmation -->
+<div class="p-4 bg-surface-container/60 border border-outline-variant/30 flex items-start gap-4">
+<input checked="" class="mt-1 w-4 h-4 rounded-none accent-primary" id="confirmaProtocolo" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="confirmaProtocolo">
+                Atesto para todos os fins de fé pública que a emissão desta ordem convocatória desencadeia a vigília dos três curadores helvéticos e institui a janela irrenunciável de 48 horas de verificação notarial presencial.
+              </label>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+<button class="w-full sm:w-auto px-8 py-4 bg-tertiary-container/15 border border-tertiary-container text-tertiary font-label-md text-label-md uppercase tracking-[0.24em] hover:bg-tertiary-container hover:text-on-tertiary transition-all flex items-center justify-center gap-3" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Iniciar Rito de Desembaraço Notarial</span>
+</button>
+<button class="w-full sm:w-auto px-6 py-4 bg-surface-container border border-outline-variant text-on-surface-variant font-label-md text-label-md uppercase tracking-[0.18em] hover:text-on-surface hover:border-primary-container transition-colors" onclick="gerarAtestadoPDF()" type="button">
+                Exportar Certidão Notarial (Selo ICP-CH)
+              </button>
+</div>
+</form>
+<!-- Terminal Log Container (Hidden by default, updated via JS) -->
+<div class="hidden mt-6 p-4 bg-surface-container-lowest border border-primary/30 font-label-sm text-label-sm text-primary tracking-wider leading-relaxed" id="terminalLog">
+<div class="flex items-center gap-2 mb-2 text-tertiary">
+<span class="inline-block w-2 h-2 bg-tertiary animate-pulse"></span>
+<span>RITO DE SOLICITAÇÃO TRANSMITIDO COM FÉ PÚBLICA</span>
+</div>
+<div class="text-on-surface-variant font-mono text-[11px] space-y-1">
+<div>[14:02:44 UTC] &gt; Despacho telemétrico assinado com chave privada Curador Geral.</div>
+<div>[14:02:45 UTC] &gt; Notificação remetida aos Notários de Zurique (CH-01) e Genebra (CH-02).</div>
+<div>[14:02:46 UTC] &gt; Cronômetro regressivo Time-Lock ativado: 47h:59m:59s restantes para abertura física.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function solicitarInspecao(cofreNome) {
+    alert("Iniciando despacho de vistoria para: " + cofreNome + ".\nUm sinal de auditoria com firma reconhecida foi endereçado à representação notarial suíça.");
+  }
+
+  function verificarEntropia(matrizNome) {
+    alert("Protocolo de Integridade MPC executado.\nEntropia física atestada em 256 bits com dispersão galvânica perfeita no bunker de Estocolmo.");
+  }
+
+  function consultarDespacho(arquivoNome) {
+    alert("Certidão do " + arquivoNome + " requisitada com sucesso sob o Tratado Fiduciário de Singapura.");
+  }
+
+  function executarRitoDesembaraco(e) {
+    e.preventDefault();
+    const logBox = document.getElementById("terminalLog");
+    if (logBox) {
+      logBox.classList.remove("hidden");
+      logBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  function gerarAtestadoPDF() {
+    alert("Gerando Instrumento Notarial Autenticado...\nProtocolo de Certificação Suíça ICP-CH baixado com selo astrolábico.");
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 mt-auto"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-3 border-b border-outline-variant/15 flex flex-wrap items-center justify-between gap-4"><div class="flex items-center gap-6 flex-wrap font-label-sm text-label-sm uppercase tracking-wider"><div class="flex items-center gap-2"><span class="text-primary font-headline-sm">AU</span><span class="text-on-surface-variant">Ouro Físico Sacro:</span><span class="text-primary font-bold">$2,892.40 / oz</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-2"><span class="text-primary font-headline-sm">RA</span><span class="text-on-surface-variant">Reservas Arcanas:</span><span class="text-on-surface">14,208 T</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-2"><span class="text-primary font-headline-sm">TP</span><span class="text-on-surface-variant">Títulos Perpétuos:</span><span class="text-on-surface">4.18% a.a.</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-2"><span class="text-primary font-headline-sm">LP</span><span class="text-on-surface-variant">Liquidez Primária:</span><span class="text-secondary-fixed">99.98% Coberta</span></div></div><div class="font-label-sm text-label-sm uppercase text-primary-container tracking-widest flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span> Status Hermético: Selado</div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"><div class="flex flex-col gap-1"><span class="font-headline-sm text-headline-sm text-primary uppercase tracking-widest">Aurea Codex Vaulting Protocol</span><span class="font-body-sm text-body-sm text-on-surface-variant">Arquitetura soberana de custódia inamovível, sigilos multissignatários e perpetuidade patrimonial fiduciária.</span></div><div class="flex flex-col items-center md:items-end gap-1"><span class="font-label-md text-label-md text-primary tracking-[0.25em]">ANO DOMINI MMXXVI</span><span class="font-label-sm text-label-sm text-on-surface-variant/60">PROTOCOLO DE CONTINUIDADE DINÁSTICA • JURISDIÇÃO PRIMA</span></div></div></footer></body></html>

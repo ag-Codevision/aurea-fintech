@@ -1,0 +1,21 @@
+# Ambientes e Logs
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Dependências e caches
+node_modules/
+.npm/
+.cache/
+
+# Ambientes virtuais Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
